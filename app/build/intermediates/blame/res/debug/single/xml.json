@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/res/merged/debug/xml/sync_context_rules.xml",
+        "source": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/exploded-aar/library-2.4.0/res/xml/sync_context_rules.xml"
+    },
+    {
+        "merged": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/res/merged/debug/xml/sync_context_battery.xml",
+        "source": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/exploded-aar/library-2.4.0/res/xml/sync_context_battery.xml"
+    },
+    {
+        "merged": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/res/merged/debug/xml/sync_context_fitness.xml",
+        "source": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/exploded-aar/library-2.4.0/res/xml/sync_context_fitness.xml"
+    },
+    {
+        "merged": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/res/merged/debug/xml/sync_context_calendar.xml",
+        "source": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/exploded-aar/library-2.4.0/res/xml/sync_context_calendar.xml"
+    },
+    {
+        "merged": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/res/merged/debug/xml/sync_context_location.xml",
+        "source": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/exploded-aar/library-2.4.0/res/xml/sync_context_location.xml"
+    },
+    {
+        "merged": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/res/merged/debug/xml/sync_context_network.xml",
+        "source": "/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/exploded-aar/library-2.4.0/res/xml/sync_context_network.xml"
+    }
+]

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_type">com.flybits.account</string>
+    <string name="error_activity_not_set">You must have enabled the %1$s Activity within your application\'s manifest in order to use the Flybits SDK. For more details please visit %2$s</string>
+    <string name="error_api_key">Your Api Key is not set. Please set it through the FlybitsOptions object and make sure you initialize the Flybits singleton with the FlybitsOptions object.</string>
+    <string name="error_baseurl_notset">Your Base Server URL is not set. Please set them through the FlybitsOptions object and make sure you initialize the Flybits singleton with the FlybitsOptions object. The url should be in the following format: http://server_path</string>
+    <string name="error_gcm_token_missing">It appears that no GCM token has been set for this device. Please call Flybit.include(context).registerGCM(String, IRequestGeneralCallback) to set a valid GCM token with Flybits.</string>
+    <string name="error_invalid_gcm_token">The GCM token associated to your Flybits account appears to be invalid please call Flybit.include(context).registerGCM(String, IRequestGeneralCallback) to set a valid GCM token with Flybits.</string>
+    <string name="error_invalid_push">Invalid Push Information Received</string>
+    <string name="error_invalid_push_type">The Flybits GCM Push token you received is not valid and therefore could be not processed. Please make sure you are using the latest version of the Flybits SDK.</string>
+    <string name="error_invalid_push_version">Invalid GCM Push Version. Please make sure you are using the latest version of the Flybits SDK.</string>
+    <string name="error_invalid_subclass">Class must extend %s in order to correctly use this function.</string>
+    <string name="error_login_missing_param">filter options cannot be null, you must call at least one login set method.</string>
+    <string name="error_missing_password">You must set a passKey for %1$s as it is a %2$s zone</string>
+    <string name="error_no_saved_gcm_token">Your GCM token does appear to be set. Please Make sure you call Flybit.include(context).registerGCM(String, IRequestGeneralCallback) at least once before attempting to delete your GCM token.</string>
+    <string name="error_on_exception">Invalid Server Response</string>
+    <string name="error_permission_not_set">You must have the %s permission set in order to use the Flybits SDK.</string>
+    <string name="error_receiver_not_set">You must have enabled the %1$s receiver within your application\'s manifest in order to use the Flybits SDK. For more details please visit %2$s</string>
+    <string name="error_server_down">Flybits is currently not accessible</string>
+    <string name="error_server_response">Error Connecting to Flybits Server: %s</string>
+    <string name="error_service_not_set">You must have enabled the %1$s service within your application\'s manifest in order to use the Flybits SDK. For more details please visit %2$s</string>
+    <string name="error_zone_rating_invalid">Rating should be an integer between 0 and 5</string>
+    <string name="error_zone_voting_invalid_param">You must specify whether the vote is an up or down vote.</string>
+    <string name="error_zones_v1_missing_param">Options cannot be null and must call at least one setter method in order to properly use getZones_v1</string>
+    <string name="flybitsAccount">com.flybits.context</string>
+    <string name="flybitsAuthority">com.flybits.app.context</string>
+    <string name="flybitsContext">com.flybits.context.all</string>
+    <string name="flybitsContextAuthority">com.flybits.context.retrieved;com.flybits.context.retrieved.battery;com.flybits.context.retrieved.network;com.flybits.context.retrieved.location;com.flybits.context.retrieved.calendar;com.flybits.context.retrieved.fitness</string>
+    <string name="flybitsContextAuthority_Battery">com.flybits.context.retrieved.battery</string>
+    <string name="flybitsContextAuthority_Calendar">com.flybits.context.retrieved.calendar</string>
+    <string name="flybitsContextAuthority_Fitness">com.flybits.context.retrieved.fitness</string>
+    <string name="flybitsContextAuthority_Location">com.flybits.context.retrieved.location</string>
+    <string name="flybitsContextAuthority_Network">com.flybits.context.retrieved.network</string>
+    <string name="flybitsContextProvider">com.flybits.context.provider</string>
+    <string name="flybitsContextRules">com.flybits.context.rules</string>
+    <string name="flybits_account">Flybits</string>
+    <string name="loading_googleInfo">Loading Your\nInformation...</string>
+    <string name="logcat_request_delete_params">Delete - ( %s )</string>
+    <string name="logcat_request_delete_params_form">Delete - ( %1$s , %2$s )</string>
+    <string name="logcat_request_delete_url">Delete - Url: %s</string>
+    <string name="logcat_request_get">Get - Url: %s</string>
+    <string name="logcat_request_get_params">Get - ( %s )</string>
+    <string name="logcat_request_get_params_form">Get - ( %1$s , %2$s )</string>
+    <string name="logcat_request_post_params">Post - ( %s )</string>
+    <string name="logcat_request_post_params_form">Post - ( %1$s , %2$s )</string>
+    <string name="logcat_request_post_url">Post - Url: %s</string>
+    <string name="logcat_request_put_params">Put - ( %s )</string>
+    <string name="logcat_request_put_params_form">Put - ( %1$s , %2$s )</string>
+    <string name="logcat_request_put_url">Put - Url: %s</string>
+    <string name="logcat_response">Response - Result: %s</string>
+    <string name="logcat_response_code">Response - Result Code %d</string>
+    <string name="logcat_response_time">Response - Time to Process Request: %d</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

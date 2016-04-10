@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gcm.play.android.samples.com.gcmquickstart">
+
+    <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- [END gcm_permission] -->
+
+
+    <!-- FlyBits permissions -->
+    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+    <uses-permission
+        android:name="tech.gregwood.flybitstest.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <permission
+        android:name="tech.gregwood.flybitstest.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="tech.gregwood.flyfit.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tech.gregwood.flyfit.AboutMe"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="gcm.play.android.samples.com.gcmquickstart" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name="tech.gregwood.flyfit.gcm.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+
+
+        <!-- Flybits Receiver -->
+        <receiver
+            android:name="com.flybits.core.api.receivers.BootReceiverForContext"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.flybits.core.api.receivers.rules.RulesAlarmManager" />
+
+        <service android:name="com.flybits.core.api.context.services.RulesRetrievalService" />
+
+        <receiver android:name="com.flybits.core.api.receivers.context.ContextCollectionAlarmManager" />
+
+        <service android:name="com.flybits.core.api.context.services.ContextUploadingService" />
+        <!-- <service android:name="com.flybits.core.api.context.services.LocationCollectionService"/> -->
+        <service android:name="com.flybits.core.api.context.services.context.LocationCollectionService" />
+        <service android:name="com.flybits.core.api.services.PushService" />
+        <service
+            android:name="com.flybits.core.api.services.gcm.FlybitsGCMListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.flybits.core.api.services.gcm.FlybitsGCMTokenListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service android:name="com.flybits.core.api.services.gcm.FlybitsGCMRegistrationIntentService" />
+
+        <!-- Demo_Mobile key -->
+        <meta-data
+            android:name="com.flybits.apikey"
+            android:value="963D36A9-D157-4C59-8745-F8EEAF473682" />
+
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name="tech.gregwood.flyfit.gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name="tech.gregwood.flyfit.gcm.RegistrationIntentService"
+            android:exported="false"></service>
+    </application>
+
+</manifest>
