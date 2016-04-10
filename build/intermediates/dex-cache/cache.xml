@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="a5cb31a51b2f3a1a7dec17b82c812eefe1aee74b">
-        <dex dex="/Users/xcode/Downloads/Flyfit-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_06052f368b3cd129abffb81756829b49190bf0cf/classes.dex" />
-    </item>
-
-</items>
+<items version="2" />

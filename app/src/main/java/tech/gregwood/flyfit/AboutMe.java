@@ -1,5 +1,6 @@
 package tech.gregwood.flyfit;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
@@ -7,7 +8,7 @@ import android.view.WindowManager;
 
 import gcm.play.android.samples.com.gcmquickstart.R;
 
-public class AboutMe extends AppCompatActivity {
+public class AboutMe extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
