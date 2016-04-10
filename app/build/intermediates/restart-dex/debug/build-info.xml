@@ -4,29 +4,21 @@
     api-level="22"
     density="xxxhdpi"
     format="7"
-    timestamp="1460311117792725000" >
+    timestamp="1460311648318368000" >
 
     <task
         name="javac"
-        duration="1164" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="16" />
+        duration="0" />
     <task
         name="verifier"
-        duration="34" />
+        duration="0" />
 
-    <artifact
-        location="/Users/xcode/Downloads/Flyfit-master/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
-
-    <build timestamp="1460311117792725000" >
-        <artifact
-            location="/Users/xcode/Downloads/Flyfit-master/app/build/outputs/apk/app-debug.apk"
-            type="MAIN" />
-    </build>
+    <build timestamp="1460311648318368000" />
 
 </instant-run>

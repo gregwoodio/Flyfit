@@ -20,12 +20,12 @@
         android:layout_width="266dp"
         android:layout_height="179dp"
         android:id="@+id/ivCounter"
-        android:src="@drawable/homestreaks1"
         android:maxHeight="@android:dimen/notification_large_icon_height"
         android:maxWidth="@android:dimen/app_icon_size"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:src="@drawable/homestreaks_01"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:paddingRight="10dp"
@@ -91,97 +91,30 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/tabBar1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/home_button"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/tabBar2"
+            android:src="@drawable/activity"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/tabBar3"
+            android:src="@drawable/me"
+            android:layout_weight="1"/>
 
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@android:color/holo_orange_dark">
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:id="@+id/tabBar1"
-                        android:src="@drawable/homewhite"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/tvTab1"
-                        android:textColor="@color/white_bg"
-                        android:text="Home"
-                        android:layout_gravity="center_horizontal|bottom"
-                        />
-                </LinearLayout>
-
-
-            </FrameLayout>
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:id="@+id/tabBar2"
-                        android:src="@drawable/activity"
-                        android:layout_weight="1"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/holo_orange_dark"
-                        android:text="Activity"
-                        android:id="@+id/tvTab2"/>
-                </LinearLayout>
-            </FrameLayout>
-
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="launchAboutMe">
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:id="@+id/tabBar3"
-                        android:src="@drawable/me"
-                        android:layout_weight="1"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/holo_orange_dark"
-                        android:text="Me"
-                        android:id="@+id/tvTab3"
-                        android:layout_weight="1"
-                        android:textAlignment="center"
-                        android:paddingLeft="10dp"/>
-                </LinearLayout>
-            </FrameLayout>
-
-
-        </LinearLayout>
     </LinearLayout>
 
 

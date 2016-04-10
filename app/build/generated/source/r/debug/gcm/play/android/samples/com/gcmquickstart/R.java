@@ -4890,7 +4890,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_android_button android:home_button}</code></td><td></td></tr>
            <tr><td><code>{@link #CompoundButton_buttonTint gcm.play.android.samples.com.gcmquickstart:buttonTint}</code></td><td></td></tr>
            <tr><td><code>{@link #CompoundButton_buttonTintMode gcm.play.android.samples.com.gcmquickstart:buttonTintMode}</code></td><td></td></tr>
            </table>
@@ -4904,7 +4904,7 @@ containing a value of this type.
         /**
           <p>This symbol is the offset where the {@link android.R.attr#button}
           attribute's value can be found in the {@link #CompoundButton} array.
-          @attr name android:button
+          @attr name android:home_button
         */
         public static final int CompoundButton_android_button = 0;
         /**
